@@ -8,6 +8,10 @@
     <uses-feature android:name="android.hardware.camera"
                   android:required="false" />
     
+    <!-- Allows photos to be saved into/loaded from a directory that can only be accessed by this app -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+                     android:maxSdkVersion="18" />
+    
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="19" />
