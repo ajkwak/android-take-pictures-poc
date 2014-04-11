@@ -4,8 +4,12 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <!-- Camera feature not required: need to check for camera presence at runtime. -->
+    <uses-feature android:name="android.hardware.camera"
+                  android:required="false" />
+    
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
 
     <application
